@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>页面布局</title>
+</head>
+<body>
+<div id="container" style="width:500px">
+
+    <div id="header" style="background-color:#FFA500;">
+        <h1 style="margin-bottom:0;">主要的网页标题</h1></div>
+
+    <div id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;">
+        <b>菜单</b><br>
+        HTML<br>
+        CSS<br>
+        JavaScript</div>
+
+    <div id="content" style="background-color:#EEEEEE;height:200px;width:400px;float:left;">
+        内容在这里</div>
+
+    <div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+        版权 © runoob.com</div>
+</div>
+
+<div>
+    <form action="">
+        <div>
+        <label>用户名：
+            <input type="text" name="user"/>
+        </label><br/>
+        <label>密码:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="password" name="password">
+        </label></div>
+        <div><label>
+            <input type="radio" name="sex" value="male" checked="checked">
+        </label>男 &nbsp;
+            <label>
+                <input type="radio" name="sex" value="female">
+            </label>女</div>
+        <div><label>
+            <input type="checkbox" name="vehicle" value="bike">
+        </label>自行车 &nbsp;
+            <label>
+                <input type="checkbox" name="vehicle" value="car">
+            </label>小汽车</div>
+        <div><label for="country">选择国家：</label><select name="country" id="country" >
+            <option value="China">中国</option>
+            <option value="England">英国</option>
+            <option value="American">美国</option>
+        </select></div>
+        <div><label for="text">参数内容：</label><br/><textarea name="text" id="text" cols="30" rows="10" placeholder="请输入内容"></textarea></div>
+        <div><input type="button" value="按钮" width="10" height="10" onclick="f()"></div>
+    </form>
+</div>
+<p id="doc">这是一个段落。</p>
+<script>document.write("javascript脚本")</script>
+<script>function f() {
+    document.getElementById("doc").innerHTML="按钮触发的段落。";
+
+}</script>
+</body>
+</html>
+
